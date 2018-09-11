@@ -26,6 +26,7 @@ import com.lgp.designpatterns.factory.impl.Fruit;
  * ps2.这里有一个变种，利用接口多实现原理，去掉工厂类，具体产品实现抽象生产者接口，抽象产品接口，代码更加美观！！
  * 逻辑就是不太好理解就是了
  **/
+@Deprecated
 public interface FruitGardenerFactory {
     public Fruit factory();
 

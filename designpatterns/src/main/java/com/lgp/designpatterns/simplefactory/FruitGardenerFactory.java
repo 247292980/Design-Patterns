@@ -22,6 +22,7 @@ import com.lgp.designpatterns.simplefactory.impl.Fruit;
  * return 具体产品
  * }
  **/
+@Deprecated
 public class FruitGardenerFactory {
 
     public static void main(String[] args) {
