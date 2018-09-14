@@ -12,7 +12,7 @@ import java.util.ResourceBundle;
  * <p>
  * 估计大家看了这几个模式都领悟了map在设计模式的使用了
  **/
-public class LingualResource {
+public class LingualResourceMultiton {
     private String language = "en";
     private String region = "US";
     private String localeCode = "en_US";
@@ -20,9 +20,9 @@ public class LingualResource {
     private static HashMap instances = new HashMap(19);
     private static Locale locale = null;
     private static ResourceBundle resourceBundle = null;
-    private static LingualResource lingualResource;
+    private static LingualResourceMultiton lingualResourceMultiton;
 
-    private LingualResource(String language, String region) {
+    private LingualResourceMultiton(String language, String region) {
         this.language = language;
         this.region = region;
         this.localeCode = makeLocaleCode(language, region);
@@ -31,18 +31,18 @@ public class LingualResource {
         instances.put(makeLocaleCode(language, region), resourceBundle);
     }
 
-    private LingualResource() {
+    private LingualResourceMultiton() {
 
     }
 
-    synchronized public static LingualResource getInstance(String language, String region) {
+    synchronized public static LingualResourceMultiton getInstance(String language, String region) {
         if (null != instances.get(makeLocaleCode(language, region))) {
             locale = new Locale(language, region);
             resourceBundle = ResourceBundle.getBundle(FILE_NAME, locale);
             instances.put(makeLocaleCode(language, region), resourceBundle);
-            return lingualResource;
+            return lingualResourceMultiton;
         } else {
-            return new LingualResource(language, region);
+            return new LingualResourceMultiton(language, region);
         }
     }
 
@@ -56,10 +56,10 @@ public class LingualResource {
 
 
     public static void main(String[] args) throws UnsupportedEncodingException {
-        LingualResource ling = LingualResource.getInstance("en", "US");
+        LingualResourceMultiton ling = LingualResourceMultiton.getInstance("en", "US");
         String usDollar = ling.getLocaleString("USD");
         System.out.println(usDollar);
-        LingualResource ling2 = LingualResource.getInstance("zh", "CH");
+        LingualResourceMultiton ling2 = LingualResourceMultiton.getInstance("zh", "CH");
         String usDollar2 = ling2.getLocaleString("JPY");
 //        System.out.println(URLEncoder.encode(usDollar2,"UTF-8"));
         System.out.println(new String(usDollar2.getBytes("ISO-8859-1"), "UTF-8"));
