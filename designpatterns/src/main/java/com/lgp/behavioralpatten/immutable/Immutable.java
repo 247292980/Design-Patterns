@@ -7,6 +7,9 @@ package com.lgp.behavioralpatten.immutable;
  * 额例子，没有，书直接用源码说
  * <p>
  * 不变模式其实名字很明显了，模式的值不变的话，引用的变量名再怎么不同，都是一样的
+ * <p>
+ * final 什么的 枚举什么的 接口常量什么的 大家都懂拉
+ * 要是要搞底层实现的话，你就不是看这本书了...
  **/
 public class Immutable {
     public static void main(String[] args) {
