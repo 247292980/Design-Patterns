@@ -12,6 +12,10 @@ package com.lgp.behavioralpatten.template;
  * 重构的原则
  * 行为向上，状态向下
  * 就是方法靠向父类，状态值具体到每个子类！
+ * <p>
+ * ps2.
+ * 里面有个命名规范
+ * 模板模式里，留给子类的方法名应该用do开头，emmm他不说我还真不知道...
  **/
 public class Template {
     public static void main(String[] args) {
