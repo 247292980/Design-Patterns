@@ -1,4 +1,4 @@
-package com.lgp.behavioralpatten.vistor;
+package com.lgp.behavioralpatten.visitor;
 
 import java.util.Enumeration;
 import java.util.Vector;

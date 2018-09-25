@@ -1,13 +1,13 @@
-package com.lgp.behavioralpatten.vistor;
+package com.lgp.behavioralpatten.visitor;
 
 /**
  * @AUTHOR lgp
  * @DATE 2018/9/25 9:58
  * @DESCRIPTION
  **/
-public class NodeA extends Node {
-    public String operationA() {
-        return "nodea!";
+public class NodeB extends Node {
+    public String operationB() {
+        return "nodeb!";
     }
 
     @Override

@@ -1,11 +1,11 @@
-package com.lgp.behavioralpatten.vistor;
+package com.lgp.behavioralpatten.visitor;
 
 /**
  * @AUTHOR lgp
  * @DATE 2018/9/25 10:00
  * @DESCRIPTION
  **/
-public class VisitorA implements Visitor {
+public class VisitorB implements Visitor {
     @Override
     public void visor(NodeA nodeA) {
         System.out.println(nodeA.operationA());
