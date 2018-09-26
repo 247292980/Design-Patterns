@@ -22,13 +22,14 @@ package com.lgp.behavioralpatten.observer;
  * 想想这种代码，现在随随便便就能反编译啊
  * <p>
  * ps2.
- * 观察者模式java内部就有实现，已变种二的形式 observerable类和observer类...
+ * 观察者模式java内部就有实现 observerable类和observer类...
  * ps3.
  * 后面有几章就是说开发java awt gui的，果然当初的安卓开发框架基本就是照搬这几章的思路，好东西永远不会过时啊
  * 例子很好，建议这里看一下书
  * 定时器本质上是一个轮询的监听器啊
+ * 例子很好，建议这里看一下书
  * 当年的书还顺道告诉你怎么hack网站，，，开拓道路的人必定在法律的边缘吗？
- * 例子很好，建议这里看一下书*2
+ * 例子很好，建议这里看一下书
  **/
 public interface Observer {
     void update();

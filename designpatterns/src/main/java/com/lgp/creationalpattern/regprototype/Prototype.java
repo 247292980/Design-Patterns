@@ -11,7 +11,7 @@ package com.lgp.creationalpattern.regprototype;
  * prototype manager 具体原型的管理器，记录每一个被创建的对象
  * <p>
  * 23333,看了下代码，登记进去了，怎么取啊老铁？
- * 而且这可能是我看的java与模式的书的问题？
+ * 这可能是我看的java与模式的书的问题？作者出了个大bug啊
  * <p>
  * 强烈建议看一下我的CopyUtil，现在看一下我当年竟然用登记原型模式封装了cglib的工具类，，，，
  * <p>

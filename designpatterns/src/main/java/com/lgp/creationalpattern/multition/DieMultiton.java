@@ -7,7 +7,7 @@ import java.util.Random;
  * @AUTHOR lgp
  * @DATE 2018/9/12 17:46
  * @DESCRIPTION 多例模式
- * 普通多例模式 定义生成，有数量限制
+ * 普通多例模式 定义实体，有数量限制
  **/
 public class DieMultiton {
     private static DieMultiton one = new DieMultiton();

@@ -14,7 +14,7 @@ import com.lgp.creationalpattern.builder.domain.Product;
  * Product          产品
  * <p>
  * 返回产品的方法若是固定的可写个默认方法，按书中所说默认方法的情况更为普遍
- * 但是，实际使用，我的写法不仅有默认方法，还把具体建造者 可以和 具体建造者的调用 合并
+ * 但是，实际使用，我的写法不仅有默认方法，还把具体建造者 和 具体建造者的调用 合并
  * 这里那里好我就不说了，因为使用的情况不多。
  * <p>
  * ps.看过mybatis的源码发现默认方法写不写，其实很有可能是一个代码习惯
@@ -27,7 +27,7 @@ import com.lgp.creationalpattern.builder.domain.Product;
  * 而单例，多例，工厂这些模式都是扩展板，哪个比较重要，实用。很明显了啊。建造者模式可以说了解即可了。
  * <p>
  * 变种2
- * 具体建造者 可以和 具体建造者的调用 合并
+ * 具体建造者 和 具体建造者的调用 合并
  * 在返回产品的方法调用建造方法即可
  * <p>
  * 变种3
@@ -47,8 +47,8 @@ import com.lgp.creationalpattern.builder.domain.Product;
  * 还有一种常见的
  * 连接mq，数据库等的
  * Connect conn;
- * conn.setPort();之类 本质上就是一种建造者模式的建造方法
- * Channel chan=con.getChannel();则是生成产品类...
+ * conn.setPort();//之类 本质上就是一种建造者模式的建造方法
+ * Channel chan=con.getChannel();//则是生成产品类...
  * 也就是说返回数据的方法的数据结构，包含多个数据都能说是建造者模式的变种....
  * 完美契合作者的认为啊
  * <p>

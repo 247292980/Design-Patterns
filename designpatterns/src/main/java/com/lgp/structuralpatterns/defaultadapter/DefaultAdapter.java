@@ -8,7 +8,7 @@ package com.lgp.structuralpatterns.defaultadapter;
  * <p>
  * 具体区别是
  * 类的适配器模式，本来只有老文件，后来为了增加功能，才有target接口和adapter类，本质上是一种迭代
- * 但是，他的变种属性的适配器模式变成了一开始三个文件都写进代码里的，但是这样不好增加新的方法，不太灵活
+ * 但是，他的变种 属性的适配器模式变成了一开始三个文件都写进代码里的，缺点是这样不好增加新的方法，不太灵活
  * 然后为了更好的增加新的功能就有了默认适配器模式，通过新建子类来增加
  **/
 public class DefaultAdapter implements Target {

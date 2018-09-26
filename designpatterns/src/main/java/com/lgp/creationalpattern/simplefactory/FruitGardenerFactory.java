@@ -11,18 +11,15 @@ import com.lgp.creationalpattern.simplefactory.impl.Fruit;
  * @DATE 2018/9/11 15:16
  * @DESCRIPTION 简单工厂模式
  * 可以看出共产类就三个部分
- * <p>
  * 工厂类 生产者
  * 实体类 具体产品
  * 接口类 抽象产品
  * <p>
  * 伪代码
- * <p>
  * public static 抽象产品 生产者{
  * return 具体产品
  * }
  **/
-@Deprecated
 public class FruitGardenerFactory {
 
     public static void main(String[] args) {
